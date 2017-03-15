@@ -12,7 +12,7 @@ input = gets.chomp
 
 
 while running == true
-  if input.to_s == "end game"
+  if input == "end game"
     puts "Quitting game"
     abort
   elsif answer.to_i == input.to_i
@@ -31,5 +31,6 @@ while running == true
     puts "To small"
       attempt += 1
         input = gets.chomp
+
   end
  end
